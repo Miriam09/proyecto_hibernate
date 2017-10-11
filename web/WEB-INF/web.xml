@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServletDistpacher</servlet-name>
+        <servlet-class>DLL.ServletDistpacher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletProyeccion</servlet-name>
+        <servlet-class>DLL.ServletProyeccion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletCartelera</servlet-name>
+        <servlet-class>DLL.ServletCartelera</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletBorrarPelicula</servlet-name>
+        <servlet-class>DLL.ServletBorrarPelicula</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDistpacher</servlet-name>
+        <url-pattern>/ServletDistpacher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletProyeccion</servlet-name>
+        <url-pattern>/ServletProyeccion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCartelera</servlet-name>
+        <url-pattern>/ServletCartelera</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletBorrarPelicula</servlet-name>
+        <url-pattern>/ServletBorrarPelicula</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

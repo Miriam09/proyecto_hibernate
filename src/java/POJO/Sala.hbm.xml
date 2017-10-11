@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-mar-2016 10:02:24 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Sala" table="sala" catalog="examenhibernate" optimistic-lock="version">
+        <id name="codigoS" type="java.lang.Integer">
+            <column name="codigoS" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" not-null="true" />
+        </property>
+        <property name="aforo" type="string">
+            <column name="aforo" length="50" not-null="true" />
+        </property>
+        <property name="datos" type="string">
+            <column name="datos" length="50" not-null="true" />
+        </property>
+        <set name="proyeccions" table="proyeccion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="codSala" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Proyeccion" />
+        </set>
+    </class>
+</hibernate-mapping>

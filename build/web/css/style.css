@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 01-dic-2015, 12:07:00
+    Author     : Miriam
+*/
+body{
+    background:  #333333;
+    /*background: url("../images/fondo.jpg");*/
+  /*background: rgb(241, 231, 208);*/
+  /*background: #FCF5E0;*/
+}
+hr {
+ hr {border: 0; height: 2px; text-align: center; background-image: linear-gradient(left, #fff, #000, #fff);}}
+.contenedorCentrado{
+    margin:auto 250px;
+
+}
+#formulario{
+
+  border: 3px #561420 outset;
+  width: 350px;
+  height: 230px;
+  text-align: center;
+  margin: 150px auto;
+  padding: 5px;
+  background: #C59A6F;
+}
+.tituloMostrar{
+     border-bottom: 2px outset #821122;
+  color:#C59A6F;
+  background: #333333;
+}
+#formulario-1{
+
+  border: 3px #561420 outset;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin: 150px auto;
+  padding: 5px;
+  background: #C59A6F;
+}
+h2{
+    color: #821122;
+}
+#formulario-2{
+
+  border: 3px #561420 outset;
+  width: 400px;
+  height: 480px;
+  text-align: center;
+  margin: 80px auto;
+  padding: 5px;
+  background: #C59A6F;
+}
+#formulario-3{
+
+  border: 3px #561420 outset;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  margin: 150px auto;
+  padding: 5px;
+  background: #C59A6F;
+}
+.inputFomr-2{
+     color:white;
+margin: 15px 15px 0 40px;
+display: block;
+width: 300px;
+height: 30px;
+background: #333333;
+border-radius: 1em;
+padding-left:10px;
+}
+.inputFomr-3{
+     color:white;
+margin: 15px 15px 0 40px;
+display: inline;
+float:left;
+width: 130px;
+height: 30px;
+background: #333333;
+border-radius: 1em;
+padding-left:10px;
+}
+.inputFomr-4{
+     color:white;
+margin: 15px 15px 0 -18px;
+display: inline;
+/*float:left;*/
+width: 130px;
+height: 30px;
+background: #333333;
+border-radius: 1em;
+padding-left:10px;
+}
+
+.inputFomr{
+     color:white;
+margin: 15px 15px 0 40px;
+display: block;
+width: 250px;
+height: 30px;
+background: #333333;
+border-radius: 1em;
+padding-left:10px;
+}
+
+#botones {
+
+}
+
+button[class^="grupo"]{
+    height: 30px;
+    border-radius: .5em;
+    background: #821122;
+    border: 2px  #C59A6F outset;
+    color: #CCCCCC;
+}
+
+#g1, #g2, #g3{
+    display: block;
+    margin-top: 10px;
+}
+
+.grupo1{
+
+}
+
+.grupo2{
+
+}
+.grupo3{
+
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.centrado{
+    text-align: center;
+}
+.cabecera-tabla{
+    background: #6D929B;
+    color: white;
+
+}
+
+.color-td{
+
+}
+
+/*
+.tabla-1>tr:nth-of-type(2)>td:nth-child(even){
+    background: #C1DAD6;
+}*/
+td.color-td{
+    background: #C1DAD6;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+td{
+
+}
+.tabla-1{
+    margin-left: 625px;
+}
+.table-1>tr>th{
+    height: 50px;
+    font-size: 30px;
+
+}
+.tabla-2{
+    margin: 120px auto 100px auto;
+
+    
+}
+
+.trMargin{
+        margin-top:  25px;
+         height: 30px;
+    border-radius: .5em;
+    background: rgb(129, 205, 69);
+    border: 2px rgb(85, 138, 43) outset;
+    } 
+.color-td-2{
+    /*#C1DAD6*/
+    background:rgb(241, 231, 208);;
+}
+
+#resultadosC{
+  margin:45px 15px 15px 25px;
+  background: white;
+  padding: 10px;
+  height: 330px;
+  width: 400px;
+}
+.cajita{
+    margin:45px 15px 15px 65px;
+}
+.cajita>h4{
+    margin-top:-10px;
+    color:#6D929B;
+}
+.secundario{
+    color:#B7AFA3;
+    font-size: 15px;
+    /*margin-top:-5px;*/
+}
+
+#atras{
+    margin: 15px 15px 15px 650px;
+}
+.colorVerde{
+    color:green;
+}
+.colorAmarillo{
+    color: #ffcc66
+}
+
+.tituloCaja{
+  border-bottom: 2px outset #821122;
+  color: #561420;
+  /*background: #333333;*/
+}
+.tabla-3{
+    margin-left: 370px;
+    padding: 10px;
+    border: 2px solid #333333;
+    width: 600px;
+    background:  #DCDDD8;
+}
+.titulos{
+    color:  #821122;
+}
+.direccion{
+    color: #333333;
+}

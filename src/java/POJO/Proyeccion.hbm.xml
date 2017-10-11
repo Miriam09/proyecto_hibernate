@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-mar-2016 10:02:24 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Proyeccion" table="proyeccion" catalog="examenhibernate" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="peliculas" class="POJO.Peliculas" fetch="select">
+            <column name="codPelicula" not-null="true" />
+        </many-to-one>
+        <many-to-one name="sala" class="POJO.Sala" fetch="select">
+            <column name="codSala" not-null="true" />
+        </many-to-one>
+        <property name="horaProyeccioon" type="time">
+            <column name="horaProyeccioon" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

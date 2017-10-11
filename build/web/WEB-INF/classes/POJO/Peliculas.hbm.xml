@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-mar-2016 10:02:24 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="POJO.Peliculas" table="peliculas" catalog="examenhibernate" optimistic-lock="version">
+        <id name="codigoP" type="java.lang.Integer">
+            <column name="codigoP" />
+            <generator class="identity" />
+        </id>
+        <property name="coidgo" type="string">
+            <column name="coidgo" length="50" not-null="true" />
+        </property>
+        <property name="titulo" type="string">
+            <column name="titulo" length="50" not-null="true" />
+        </property>
+        <property name="genero" type="string">
+            <column name="genero" length="50" not-null="true" />
+        </property>
+        <property name="director" type="string">
+            <column name="director" length="50" not-null="true" />
+        </property>
+        <property name="fechaEstreno" type="date">
+            <column name="fechaEstreno" length="10" not-null="true" />
+        </property>
+        <property name="duracion" type="int">
+            <column name="duracion" not-null="true" />
+        </property>
+        <set name="proyeccions" table="proyeccion" inverse="true" lazy="true" fetch="select" cascade="all">
+            <key>
+                <column name="codPelicula" not-null="true" />
+            </key>
+            <one-to-many class="POJO.Proyeccion" />
+        </set>
+        <set name="actors" table="actor" inverse="true" lazy="true" fetch="select" cascade="all">
+            <key>
+                <column name="codPelicula" />
+            </key>
+            <one-to-many class="POJO.Actor" />
+        </set>
+    </class>
+</hibernate-mapping>
